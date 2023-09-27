@@ -1,0 +1,103 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Mulish";
+    /* margin: 0; */
+}
+body{
+    margin: 0;
+    background-color: rgb(24, 24, 54);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.wrapper{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   /* width: 800px; */
+   height: 600px;
+   gap: 20px;
+}
+.main_list{
+    border: 1px solid;
+    width: 200px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* display: grid;
+    grid-template-rows: 1fr, 3fr, 1fr;
+    place-items: center; */
+    border-radius: 15px;
+}
+.todo_title,
+.ip_title,
+.done_title{
+    background-color: rgb(218, 81, 81);
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+    display: grid;
+    place-items: center;
+}
+.ip_title{
+    background-color: orangered;
+}
+.done_title{
+    background-color: green;
+}
+.main_list h1{
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+}
+.list,
+.selected{
+    width: 170px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: #fff;
+
+}
+/* ::selection{
+    width: 170px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: #fff;
+} */
+.add{
+    /* margin-top: 50px; */
+    border: none;
+    /* padding: 10px 10px; */
+    width: 90px;
+    height: 35px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(108, 108, 236);
+    color: #fff;
+    /* transform: translateY(100px); */
+}
